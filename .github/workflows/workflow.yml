@@ -12,6 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+              submodules: "recursive"
     - run: ls
     - run: ls dockerfileSubmodule
     - name: Build the Docker image
