@@ -17,4 +17,4 @@ jobs:
     - run: ls
     - run: ls dockerfileSubmodule
     - name: Build the Docker image
-      run: docker build -f ./dockerfileSubmodule -t dockerpy .
+      run: docker build -f dockerfileSubmodule/Dockerfile -t dockerpy .
