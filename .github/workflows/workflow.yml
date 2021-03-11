@@ -13,7 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-              submodules: "recursive"
+              ref: "v1.0.0"
+              submodules: "true"
     - run: ls
     - run: ls dockerfileSubmodule
     - name: Build the Docker image
