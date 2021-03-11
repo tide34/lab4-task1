@@ -13,5 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: ls
+    - run: cd dockerfileSubmodule
     - name: Build the Docker image
       run: docker build -t dockerpy ./dockerfileSubmodule
