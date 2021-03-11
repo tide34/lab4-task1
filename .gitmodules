@@ -1,4 +1,0 @@
-[submodule "dockerfileSubmodule"]
-	path = dockerfileSubmodule
-	url = git@github.com:tide34/dockerfileSubmodule.git
-        branch = 1eb3d967c95bd35bb8712b680da46f19db86740a
