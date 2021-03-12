@@ -1,0 +1,3 @@
+[submodule "dockerfileSubmodule"]
+	path = dockerfileSubmodule
+	url = git@github.com:tide34/dockerfileSubmodule.git
