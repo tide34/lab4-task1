@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-              submodules: "recursive"
     - name: Checkout to needed commit with tag
       run: |
+              git submodule init
+              git submodule update
               cd dockerfileSubmodule/
               git log 
               git checkout v1.0.0 
