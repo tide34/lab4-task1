@@ -14,5 +14,10 @@ jobs:
     - uses: actions/checkout@v2
       with:
               submodules: "true"
+    - name: Checkout to needed commit with tag
+      run: |
+              cd dockerfileSubmodule/
+              git checkout 8f2b25ae4c0bd3001712b12220f1e709c0a35aa1 
+              cd ../
     - name: Build the Docker image
       run: docker build -f dockerfileSubmodule/Dockerfile -t dockerpy .
