@@ -16,7 +16,8 @@ jobs:
               submodules: "recursive"
     - name: Checkout to needed commit with tag
       run: |
-              git log
+              git sybmodule sync
+              git submodule update --remote
               cd dockerfileSubmodule/
               git log 
               git checkout v1.0.0 
